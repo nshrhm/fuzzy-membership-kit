@@ -1,5 +1,14 @@
 """Reusable membership functions for fuzzy-set research."""
 
+from .anchors import (
+    logit,
+    solve_arctan_gain,
+    solve_generalized_logistic_params,
+    solve_gompertz_gain,
+    solve_logistic_gain,
+    solve_tanh_gain,
+    validate_anchor_inputs,
+)
 from .core import (
     FUNCTIONS,
     MembershipCollection,
@@ -18,27 +27,66 @@ from .core import (
     triangular,
     z_curve,
 )
+from .diagnostics import (
+    anchor_error,
+    check_monotonicity,
+    check_range,
+    local_discriminability,
+    numerical_derivative,
+    numerical_second_derivative,
+    summarize_diagnostics,
+    tail_compression_ratio,
+)
+from .focus import FocusAwareMembership
 from .io import load_collection, save_collection
+from .warping import (
+    arctan_warp,
+    generalized_logistic_warp,
+    gompertz_warp,
+    logistic_warp,
+    tanh_warp,
+)
 
 __all__ = [
     "FUNCTIONS",
+    "FocusAwareMembership",
     "MembershipCollection",
     "MembershipSpec",
+    "anchor_error",
+    "arctan_warp",
+    "check_monotonicity",
+    "check_range",
     "compressed_pi",
     "compressed_s",
     "compressed_z",
     "gaussian",
+    "generalized_logistic_warp",
+    "gompertz_warp",
     "load_collection",
+    "local_discriminability",
+    "logistic_warp",
+    "logit",
+    "numerical_derivative",
+    "numerical_second_derivative",
     "pi_curve",
     "s_curve",
     "save_collection",
     "sigmoid",
     "sigmoid_gain_from_quantile",
+    "solve_arctan_gain",
+    "solve_generalized_logistic_params",
+    "solve_gompertz_gain",
+    "solve_logistic_gain",
+    "solve_tanh_gain",
+    "summarize_diagnostics",
+    "tail_compression_ratio",
+    "tanh_warp",
     "trapezoid_falling",
     "trapezoid_pi",
     "trapezoid_rising",
     "triangular",
+    "validate_anchor_inputs",
     "z_curve",
 ]
 
-__version__ = "0.1.0"
+__version__ = "0.2.0.dev0"

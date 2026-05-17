@@ -16,6 +16,11 @@ nav:
   - Diagnostics: diagnostics.md
   - 診断指標: diagnostics_ja.md
   - 実装ガイド: implementation_ja.md
+  - Paper 1 Planning:
+      - Outline: paper1_outline.md
+      - Outline 日本語: paper1_outline_ja.md
+      - Repository-to-Paper Map: repository_to_paper_map.md
+      - Repository-to-Paper Map 日本語: repository_to_paper_map_ja.md
   - Paper snippet: paper_snippet.md
   - Reviewer notes: reviewer_notes.md
 markdown_extensions:

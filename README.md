@@ -96,7 +96,9 @@ print(mf([49, 50, 51, 210]))
 
 Paper-specific repositories can use this package as a common core dependency
 while keeping human data, LLM response data, experiments, and manuscripts outside
-this reusable package repository.
+this reusable package repository.  For Paper 1 planning and traceability between
+manuscript claims and repository artifacts, see `docs/paper1_outline.md` and
+`docs/repository_to_paper_map.md`.
 
 ## Configuration-based use
 
@@ -124,6 +126,8 @@ uv run fuzzymf-plot examples/configs/emotion_vas_0_100.yaml -o results/emotion_m
 - `docs/warping_framework_ja.md`: Japanese Paper 1 warping notes.
 - `docs/diagnostics.md`: diagnostics for warps and composed memberships.
 - `docs/diagnostics_ja.md`: Japanese diagnostics notes.
+- `docs/paper1_outline.md`: Paper 1 planning outline.
+- `docs/repository_to_paper_map.md`: traceability map from paper claims to repository artifacts.
 - `docs/paper_snippet.md`: text that can be adapted into a manuscript.
 - `docs/reviewer_notes.md`: checklist for reviewer-facing repositories.
 

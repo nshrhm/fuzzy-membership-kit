@@ -41,8 +41,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "0da026685c89a14ef86c8f006307e7dfaef5f2f51a69ba33992e1e21cafb88e5",
-      "bytes": 5286
+      "sha256": "74ac6c0d0b5ea8c043eaab7209a64de081ea6bbd2b33b4757a7d4f0e209f4bfb",
+      "bytes": 5596
     },
     {
       "path": "docs/diagnostics.md",
@@ -70,9 +70,29 @@
       "bytes": 679
     },
     {
+      "path": "docs/paper1_outline.md",
+      "sha256": "f2ef0455e149620d9b6fe3b692396fc2931c10ff203ea1fc4d732b7307718d87",
+      "bytes": 7227
+    },
+    {
+      "path": "docs/paper1_outline_ja.md",
+      "sha256": "f8e0da66129038f3e20408bd2b99bf5a648dd2baab36b7d778354c864fc3d7d8",
+      "bytes": 7925
+    },
+    {
       "path": "docs/paper_snippet.md",
       "sha256": "ba3593d2d23d5897ac9ff5331c6eb7b0c5e535a3c975fc0d8f18b49bd3fd5fc8",
       "bytes": 1643
+    },
+    {
+      "path": "docs/repository_to_paper_map.md",
+      "sha256": "cc8cac7b2e371cbe09483ea0703af75513bf0deccb78b748eb6e82824627fd70",
+      "bytes": 4055
+    },
+    {
+      "path": "docs/repository_to_paper_map_ja.md",
+      "sha256": "7578346af7813c3d9ea23b04e9eecdec33e0622a222f475f053d4e7df47a6fdf",
+      "bytes": 4232
     },
     {
       "path": "docs/reviewer_notes.md",
@@ -126,8 +146,8 @@
     },
     {
       "path": "mkdocs.yml",
-      "sha256": "f4c4a309191d76573a806ab8951c6b2779b65e3ae95c92121a30d0ebc12bd670",
-      "bytes": 830
+      "sha256": "a2595583a4bb93b584ee531f615ae25bd81dab80f4f58fee86accabf05516d12",
+      "bytes": 1068
     },
     {
       "path": "pyproject.toml",

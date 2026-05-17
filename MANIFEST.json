@@ -1,11 +1,12 @@
 {
+  "schema_version": "1.0",
   "package_name": "fuzzy-membership-kit",
-  "package_version": "0.1.0",
-  "created_utc": "2026-05-17T04:52:06Z",
-  "source_commit": "not_applicable_initial_generated_artifact",
+  "package_version": "0.2.0.dev0",
+  "generated_by": "scripts/generate_manifest.py",
   "membership_config_examples": [
     "examples/configs/emotion_vas_0_100.yaml",
-    "examples/configs/number_large_umano2025.json"
+    "examples/configs/number_large_umano2025.json",
+    "examples/configs/paper1_warping_comparison.yaml"
   ],
   "files": [
     {
@@ -20,8 +21,8 @@
     },
     {
       "path": "CITATION.cff",
-      "sha256": "87edfaa04719643e3582d0d04fbfd79efdfb50639def9a9aa79d79a4eb8e359f",
-      "bytes": 602
+      "sha256": "991d27ef8119163b378fbba66275491416827b94ae388f8f2759b16223a07965",
+      "bytes": 579
     },
     {
       "path": "CODEX_TASK.md",
@@ -40,18 +41,28 @@
     },
     {
       "path": "README.md",
-      "sha256": "d491c50cda2c1f7ca09b20380c7c29c7d299aa376cf48191175fe9ac8d3d6d54",
-      "bytes": 3921
+      "sha256": "0da026685c89a14ef86c8f006307e7dfaef5f2f51a69ba33992e1e21cafb88e5",
+      "bytes": 5286
+    },
+    {
+      "path": "docs/diagnostics.md",
+      "sha256": "e36fa9c57b6c56a4dc9f90711b5a4bdc0ec8713c38bdb3df9bde7b4984115e3e",
+      "bytes": 1614
+    },
+    {
+      "path": "docs/diagnostics_ja.md",
+      "sha256": "a486e21f777697058454bb6163cf5c15a17a80cf627391a8da90018ee04794e9",
+      "bytes": 1141
     },
     {
       "path": "docs/implementation.md",
-      "sha256": "5f9d87f174e14708cc68a618d5107b6984002d311a61c2ca137797cf3404d134",
-      "bytes": 3845
+      "sha256": "485ee41b483df885f41a93cbba4b8517d5d4f6c56d96792fb3e98b8a83400c9f",
+      "bytes": 4491
     },
     {
       "path": "docs/implementation_ja.md",
-      "sha256": "80a3f54f29accbedc2c14ecdfa4d554fd81d19bec53bc119d83df0e22ee33d27",
-      "bytes": 3916
+      "sha256": "0fd25f59d53defea636158e12a62a87d2f858a66a69f691d9fccdbbfe7b83e4b",
+      "bytes": 4215
     },
     {
       "path": "docs/index.md",
@@ -60,13 +71,13 @@
     },
     {
       "path": "docs/paper_snippet.md",
-      "sha256": "f11898c0b671ced3f1ad10311d52ac073213e6dcc574768e123cd6a70c548dcf",
-      "bytes": 1638
+      "sha256": "ba3593d2d23d5897ac9ff5331c6eb7b0c5e535a3c975fc0d8f18b49bd3fd5fc8",
+      "bytes": 1643
     },
     {
       "path": "docs/reviewer_notes.md",
-      "sha256": "6af83c93ab369a5856c1c4000b2714d037fcb0ddc357ef59ac73a9ba4471368e",
-      "bytes": 1554
+      "sha256": "2498689544810f75961e67ed9f2b5597a5cdcb26478c9e7e80184e0730621d44",
+      "bytes": 1790
     },
     {
       "path": "docs/theory.md",
@@ -77,6 +88,16 @@
       "path": "docs/theory_ja.md",
       "sha256": "3d5b375fe4b4d945f375109412ce7f4dc1a4d4220804f8594ab5f440734f26a3",
       "bytes": 4712
+    },
+    {
+      "path": "docs/warping_framework.md",
+      "sha256": "deaaef47aa05ba6ce7cd82d9801bbf5c3fcb22e40eea6087dab1e4e3621a255d",
+      "bytes": 2374
+    },
+    {
+      "path": "docs/warping_framework_ja.md",
+      "sha256": "e36df67af6faebef7dcdbc6c9314e018314d92ca8ca04879fb9625e451737182",
+      "bytes": 2385
     },
     {
       "path": "examples/basic_usage.py",
@@ -94,24 +115,39 @@
       "bytes": 575
     },
     {
+      "path": "examples/configs/paper1_warping_comparison.yaml",
+      "sha256": "e95260a56d6fd55d1fc493c3a9ac2fb6fa23e3a58d8a995a46d8ac79fee3c9ae",
+      "bytes": 567
+    },
+    {
       "path": "examples/from_config.py",
       "sha256": "3f10d3eefa7df23beeb8041b3ad744595d2d2b7504101128d7a96ad101336b10",
       "bytes": 351
     },
     {
       "path": "mkdocs.yml",
-      "sha256": "0bd40f507e1158510c6dd01f328c60a6abe2b0eeb97912790e31dcad7fce46ae",
-      "bytes": 664
+      "sha256": "f4c4a309191d76573a806ab8951c6b2779b65e3ae95c92121a30d0ebc12bd670",
+      "bytes": 830
     },
     {
       "path": "pyproject.toml",
-      "sha256": "547f438e52b464e5d4f7dc22a53b87cd5cdf6752c9929a4a3099d59aad9745c6",
-      "bytes": 1491
+      "sha256": "cc4b2a335476b10d02d518124c2d9ec7c2f41af6b3639072368199a8b4dc6671",
+      "bytes": 1496
     },
     {
       "path": "results/validation_report.json",
       "sha256": "c6c53f9fe5909558c512f15dcf49256d87436481bec656ebb46e1d793c290ac6",
       "bytes": 1001
+    },
+    {
+      "path": "scripts/generate_manifest.py",
+      "sha256": "9cbfd14f0be04bc97c999f18ed4896337fa57a206300549cbae99b5a016f389c",
+      "bytes": 3680
+    },
+    {
+      "path": "scripts/reproduce_paper1_diagnostics.py",
+      "sha256": "459771983bc5f7a20f790b2ab9acbd9f23c5f4900cd8df5d3d50ca5d7f16ff09",
+      "bytes": 5496
     },
     {
       "path": "scripts/validate_config.py",
@@ -120,8 +156,13 @@
     },
     {
       "path": "src/fuzzymf/__init__.py",
-      "sha256": "d3e14ef6cad15c183d8218a1097f96150d1fcf07d7fea26d2288951f73e81a9d",
-      "bytes": 836
+      "sha256": "74ca57bde907d855bac1c2c0e5211a2a62ef77df39cda15b91886d2d9266a006",
+      "bytes": 1976
+    },
+    {
+      "path": "src/fuzzymf/anchors.py",
+      "sha256": "8591b30de4e26aa24732ea994d207b08e44b99802223743db4cb81e51d672895",
+      "bytes": 4430
     },
     {
       "path": "src/fuzzymf/cli/__init__.py",
@@ -139,6 +180,16 @@
       "bytes": 12181
     },
     {
+      "path": "src/fuzzymf/diagnostics.py",
+      "sha256": "68fa71e0dd5004305bda804a82ba43596f615a6a13a9d220f56ca98a88065aff",
+      "bytes": 6155
+    },
+    {
+      "path": "src/fuzzymf/focus.py",
+      "sha256": "b5b69cfba673a77d66d254f7b8972159b7727fef941b23393c32ac4de2cc9920",
+      "bytes": 1529
+    },
+    {
       "path": "src/fuzzymf/io.py",
       "sha256": "3b3f9f87c6f2724af1eb2a7c189091414ed433601882c05d4ccfb4de233855c3",
       "bytes": 1463
@@ -154,9 +205,29 @@
       "bytes": 1408
     },
     {
+      "path": "src/fuzzymf/warping.py",
+      "sha256": "8745e13c2cacc2eda4d960d24d075a2d0757f6e246c8906fc34c5dcee1fbd861",
+      "bytes": 4736
+    },
+    {
+      "path": "tests/test_anchors.py",
+      "sha256": "ac47f7b33cec97f0acceb75873db962fe7a5dfa5e634c348fcd0490a01183b4a",
+      "bytes": 1428
+    },
+    {
       "path": "tests/test_core.py",
       "sha256": "c97d73b95430193be52d429f1e1be1f7a070fa2f25ba03f078c548be7ab1e49b",
       "bytes": 2638
+    },
+    {
+      "path": "tests/test_diagnostics.py",
+      "sha256": "9a4f3610f5c85b9759641120b6455b43aecf835765f12f17d15d93d3523d9487",
+      "bytes": 3123
+    },
+    {
+      "path": "tests/test_focus.py",
+      "sha256": "3a43dd927af54371aefadba529cda4348fabfcd255811a1df4ae02b26866b53c",
+      "bytes": 1063
     },
     {
       "path": "tests/test_io.py",
@@ -164,9 +235,14 @@
       "bytes": 665
     },
     {
+      "path": "tests/test_warping.py",
+      "sha256": "cce5c6fc66295d7e736d3a99731bb008a143d8b4c3f72e73fd845fd2c27e77e0",
+      "bytes": 2593
+    },
+    {
       "path": "uv.lock",
-      "sha256": "f741634b8e26d9c63964c023395cea127205441e92235030f38d88de3cbd75cd",
-      "bytes": 317386
+      "sha256": "a7e48eda31a639830c9262a1582bbb3a5cd30c891da6187202461ce357582e6d",
+      "bytes": 317391
     }
   ]
 }

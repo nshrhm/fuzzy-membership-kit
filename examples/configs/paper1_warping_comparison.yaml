@@ -1,0 +1,25 @@
+universe:
+  name: Paper 1 illustrative universe of discourse
+  symbol: u
+  min: -200
+  max: 300
+metadata:
+  paper: paper1
+  draft_package_version: 0.2.0.dev0
+  title: Focus-Aware Membership Functions via Universe-of-Discourse Warping
+  note: Reproducible parameter manifest only; no external data are required.
+anchors:
+  focus: 50
+  far: 210
+  q: 0.9
+  q_meaning: warped-coordinate target, so w(far)=q and mu(far)=h(q)
+base_membership:
+  kind: s_curve
+  left: 0.1
+  right: 0.9
+warping_families:
+  - logistic
+  - tanh
+  - arctan
+  - gompertz
+  - generalized_logistic

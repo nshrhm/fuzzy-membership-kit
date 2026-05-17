@@ -10,7 +10,11 @@ nav:
   - Home: index.md
   - Theory: theory.md
   - Theory 日本語: theory_ja.md
+  - Warping framework: warping_framework.md
+  - ワーピング枠組み: warping_framework_ja.md
   - Implementation: implementation.md
+  - Diagnostics: diagnostics.md
+  - 診断指標: diagnostics_ja.md
   - 実装ガイド: implementation_ja.md
   - Paper snippet: paper_snippet.md
   - Reviewer notes: reviewer_notes.md

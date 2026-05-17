@@ -34,7 +34,7 @@ S(x;p,q)=
 \end{cases}
 \]
 
-The implementation used `fuzzy-membership-kit` version `0.1.0`.  The exact membership configuration, package commit, and derived score files are provided in the accompanying repository.
+The implementation used `fuzzy-membership-kit` version `0.2.0.dev0`.  The exact membership configuration, package commit, and derived score files are provided in the accompanying repository.
 
 ## Example parameter statement
 

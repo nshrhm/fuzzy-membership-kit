@@ -49,7 +49,7 @@ universe:
   max: 100
 metadata:
   paper: example
-  version: 0.1.0
+  version: 0.2.0.dev0
 memberships:
   - name: high
     kind: compressed_s
@@ -84,6 +84,8 @@ score_output_files
 ```
 
 これにより、メンバーシップ関数の数学的定義、採用したパラメータ、適用したデータを分離して説明できる。
+
+リポジトリ直下の `MANIFEST.json` は、再現性確認のためにファイル単位の SHA-256 チェックサムを記録する。コミットやタグの情報は、コミット済みの manifest 自体ではなく、Git の履歴またはリリース成果物から確認する。
 
 ## 6. 検査
 

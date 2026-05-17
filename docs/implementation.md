@@ -15,10 +15,16 @@ The repository is designed around four principles.
 src/fuzzymf/core.py          # membership definitions and serializable specs
 src/fuzzymf/io.py            # JSON/YAML loader and saver
 src/fuzzymf/validation.py    # simple numerical checks
+src/fuzzymf/warping.py       # anchored universe warping functions
+src/fuzzymf/anchors.py       # closed-form semantic-anchor solvers
+src/fuzzymf/focus.py         # h(w(u)) composition wrapper
+src/fuzzymf/diagnostics.py   # reviewer-facing numerical diagnostics
 src/fuzzymf/cli/plot.py      # command-line plotter
 examples/configs/            # reusable configuration examples
 tests/                       # unit tests for definitions and configuration
 ```
+
+The v0.2.0.dev0 Paper 1 draft adds the focus-aware warping form `mu(u)=h(w_theta(u))`; see `docs/warping_framework.md` and `docs/diagnostics.md`.
 
 ## 3. Function naming convention
 
@@ -49,7 +55,7 @@ universe:
   max: 100
 metadata:
   paper: example
-  version: 0.1.0
+  version: 0.2.0.dev0
 memberships:
   - name: high
     kind: compressed_s
@@ -84,6 +90,8 @@ score_output_files
 ```
 
 This makes it possible to distinguish the mathematical definition, the selected parameters, and the dataset to which the membership functions were applied.
+
+The repository-level `MANIFEST.json` records file-level SHA-256 checksums for reproducibility.  Commit or tag information should be taken from the Git repository history or release artifact, not from the committed manifest itself.
 
 ## 6. Validation checks
 

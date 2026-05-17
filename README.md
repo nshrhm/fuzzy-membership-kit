@@ -1,6 +1,7 @@
 # fuzzy-membership-kit
 
 [![CI](https://github.com/nshrhm/fuzzy-membership-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/nshrhm/fuzzy-membership-kit/actions/workflows/ci.yml)
+[![Version: v0.2.0.dev0 draft](https://img.shields.io/badge/version-v0.2.0.dev0%20draft-blue)](pyproject.toml)
 [![Python](https://img.shields.io/badge/python-%3E%3D3.10-blue)](https://www.python.org/)
 [![Package manager: uv](https://img.shields.io/badge/package%20manager-uv-6f42c1)](https://docs.astral.sh/uv/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -15,7 +16,8 @@ The package currently includes:
 - sigmoid-composed S/Z/pi functions for smoothly compressing the universe of discourse before evaluating membership;
 - serializable JSON/YAML membership specifications;
 - lightweight validation helpers for range and monotonicity checks;
-- documentation text that can be adapted into a paper's theory/principles section.
+- documentation text that can be adapted into a paper's theory/principles section;
+- focus-aware universe warping utilities for the Paper 1 v0.2.0.dev0 draft.
 
 ## Installation on Ubuntu
 
@@ -69,6 +71,33 @@ high = MembershipSpec(
 print(high([40, 50, 60, 90]))
 ```
 
+## v0.2.0.dev0 draft: Focus-Aware Warping Framework
+
+The Paper 1 development branch generalizes sigmoid-composed membership functions into
+a universe-of-discourse warping form:
+
+```text
+mu(u) = h(w_theta(u))
+```
+
+The warp anchor `q` is a warped-coordinate target: `w(focus)=0.5` and
+`w(far)=q`.  The composed membership targets are `mu(focus)=h(0.5)` and
+`mu(far)=h(q)`, so `q` is not necessarily the final membership value.
+
+```python
+from fuzzymf import FocusAwareMembership, logistic_warp, s_curve
+
+base = lambda x: s_curve(x, left=0.1, right=0.9)
+warp = lambda u: logistic_warp(u, focus=50, far=210, q=0.9)
+mf = FocusAwareMembership(base=base, warping=warp, name="large_focus_aware")
+
+print(mf([49, 50, 51, 210]))
+```
+
+Paper-specific repositories can use this package as a common core dependency
+while keeping human data, LLM response data, experiments, and manuscripts outside
+this reusable package repository.
+
 ## Configuration-based use
 
 ```python
@@ -91,6 +120,10 @@ uv run fuzzymf-plot examples/configs/emotion_vas_0_100.yaml -o results/emotion_m
 - `docs/theory_ja.md`: Japanese theory notes with equations.
 - `docs/implementation.md`: implementation and reproducibility guidance.
 - `docs/implementation_ja.md`: Japanese implementation guide.
+- `docs/warping_framework.md`: Paper 1 focus-aware warping notes.
+- `docs/warping_framework_ja.md`: Japanese Paper 1 warping notes.
+- `docs/diagnostics.md`: diagnostics for warps and composed memberships.
+- `docs/diagnostics_ja.md`: Japanese diagnostics notes.
 - `docs/paper_snippet.md`: text that can be adapted into a manuscript.
 - `docs/reviewer_notes.md`: checklist for reviewer-facing repositories.
 

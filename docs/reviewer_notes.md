@@ -29,6 +29,8 @@ results/validation_report.json
 MANIFEST.json
 ```
 
+`MANIFEST.json` records file-level SHA-256 checksums.  Source commit and tag information should be verified from the repository history or release artifact, rather than from a committed manifest that would become stale when committed.
+
 ## Common pitfalls
 
 - Reporting only "triangular" or "S-shaped" without parameter values.

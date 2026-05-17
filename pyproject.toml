@@ -1,0 +1,74 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fuzzy-membership-kit"
+version = "0.1.0"
+description = "Auditable, reusable membership-function definitions for fuzzy-set research."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Repository maintainer"}
+]
+keywords = [
+  "fuzzy sets",
+  "membership functions",
+  "S-curve",
+  "sigmoid composition",
+  "research reproducibility"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Mathematics"
+]
+dependencies = [
+  "numpy>=1.24"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6"
+]
+plot = [
+  "matplotlib>=3.7",
+  "PyYAML>=6.0"
+]
+docs = [
+  "mkdocs>=1.5",
+  "mkdocs-material>=9.5"
+]
+all = [
+  "matplotlib>=3.7",
+  "PyYAML>=6.0",
+  "pytest>=8.0",
+  "ruff>=0.6",
+  "mkdocs>=1.5",
+  "mkdocs-material>=9.5"
+]
+
+[project.scripts]
+fuzzymf-plot = "fuzzymf.cli.plot:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fuzzymf"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

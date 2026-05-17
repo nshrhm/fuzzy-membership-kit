@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install uv and Python
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+        with:
+          version: "0.11.14"
+          python-version: ${{ matrix.python-version }}
+          enable-cache: true
+
+      - name: Check lockfile
+        run: uv lock --check
+
+      - name: Install dependencies
+        run: uv sync --locked --extra dev --extra plot --extra docs
+
+      - name: Run tests
+        run: uv run pytest
+
+      - name: Run lint
+        run: uv run ruff check src tests
+
+      - name: Build docs
+        run: uv run mkdocs build

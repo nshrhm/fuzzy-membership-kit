@@ -1,0 +1,24 @@
+{
+  "universe": {
+    "name": "real-valued number example",
+    "symbol": "u",
+    "min": -200,
+    "max": 300
+  },
+  "metadata": {
+    "purpose": "Illustrative 'large number' configuration using a sigmoid-composed S curve.",
+    "theory": "sigmoid-composed S function inspired by Umano (2025)"
+  },
+  "memberships": [
+    {
+      "name": "large_number",
+      "kind": "compressed_s",
+      "params": {
+        "focus": 50,
+        "far": 210,
+        "upper_q": 0.9
+      },
+      "description": "Membership is 0.5 at u=50 and reaches 1.0 at u=210 under q=0.9."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+universe:
+  name: Visual analogue scale
+  symbol: u
+  min: 0
+  max: 100
+  unit: score
+metadata:
+  purpose: Example membership definitions for emotion intensity on a 0-100 VAS.
+  note: Parameters are illustrative and must be justified for a particular paper.
+memberships:
+  - name: low_emotion
+    kind: compressed_z
+    params:
+      focus: 40
+      far: 75
+      upper_q: 0.9
+    description: Decreasing fuzzy set; membership is 0.5 at 40 and 0.0 at 75.
+  - name: medium_emotion
+    kind: compressed_pi
+    params:
+      left_focus: 25
+      left_far: 40
+      right_focus: 65
+      right_far: 85
+      upper_q: 0.9
+    description: Central fuzzy set with sigmoid-compressed tails.
+  - name: high_emotion
+    kind: compressed_s
+    params:
+      focus: 50
+      far: 90
+      upper_q: 0.9
+    description: Increasing fuzzy set; membership is 0.5 at 50 and 1.0 at 90.

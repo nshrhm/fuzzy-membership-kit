@@ -1,0 +1,172 @@
+{
+  "package_name": "fuzzy-membership-kit",
+  "package_version": "0.1.0",
+  "created_utc": "2026-05-17T04:52:06Z",
+  "source_commit": "not_applicable_initial_generated_artifact",
+  "membership_config_examples": [
+    "examples/configs/emotion_vas_0_100.yaml",
+    "examples/configs/number_large_umano2025.json"
+  ],
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "25f7ceeb155e6db568aad22869dd82b7187f3602d3877da0d84b614b1138ab83",
+      "bytes": 975
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "444a6d1d1232ecb8b5db7238586ccbf3b6186a4986f19a596a923eabeff78e4a",
+      "bytes": 122
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "87edfaa04719643e3582d0d04fbfd79efdfb50639def9a9aa79d79a4eb8e359f",
+      "bytes": 602
+    },
+    {
+      "path": "CODEX_TASK.md",
+      "sha256": "7d2d379b42949e06cbd0ddf9441e654694b68d28759f4ecb86af4184aa2c34b9",
+      "bytes": 974
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "a3e81e3c476e08e441f5532143f9fd9d2856488cd5d2d7c642d92d8cab7bf220",
+      "bytes": 1078
+    },
+    {
+      "path": "Makefile",
+      "sha256": "10b5723f906c2d48e40c4c856a7b3b39ca9912692573f6515e48f4562e0749fb",
+      "bytes": 293
+    },
+    {
+      "path": "README.md",
+      "sha256": "d491c50cda2c1f7ca09b20380c7c29c7d299aa376cf48191175fe9ac8d3d6d54",
+      "bytes": 3921
+    },
+    {
+      "path": "docs/implementation.md",
+      "sha256": "5f9d87f174e14708cc68a618d5107b6984002d311a61c2ca137797cf3404d134",
+      "bytes": 3845
+    },
+    {
+      "path": "docs/implementation_ja.md",
+      "sha256": "80a3f54f29accbedc2c14ecdfa4d554fd81d19bec53bc119d83df0e22ee33d27",
+      "bytes": 3916
+    },
+    {
+      "path": "docs/index.md",
+      "sha256": "bf8a109bd2ab28e23c25ce1d52128586d9890afb52a0db4ecbdaccd384c18b58",
+      "bytes": 679
+    },
+    {
+      "path": "docs/paper_snippet.md",
+      "sha256": "f11898c0b671ced3f1ad10311d52ac073213e6dcc574768e123cd6a70c548dcf",
+      "bytes": 1638
+    },
+    {
+      "path": "docs/reviewer_notes.md",
+      "sha256": "6af83c93ab369a5856c1c4000b2714d037fcb0ddc357ef59ac73a9ba4471368e",
+      "bytes": 1554
+    },
+    {
+      "path": "docs/theory.md",
+      "sha256": "01da669b9fc96e502ddd4a759f2d0344768dab474f8875158218c26745465573",
+      "bytes": 4417
+    },
+    {
+      "path": "docs/theory_ja.md",
+      "sha256": "3d5b375fe4b4d945f375109412ce7f4dc1a4d4220804f8594ab5f440734f26a3",
+      "bytes": 4712
+    },
+    {
+      "path": "examples/basic_usage.py",
+      "sha256": "9d945dcb1e48b65a996d9be4fa25ba8a6d28926e62b8bc20d9629066b813c397",
+      "bytes": 274
+    },
+    {
+      "path": "examples/configs/emotion_vas_0_100.yaml",
+      "sha256": "d9dd7ac9e2e572b8d7c0e76ec04efeb1bba9f7d6bea236f5f15f00849db4ad02",
+      "bytes": 868
+    },
+    {
+      "path": "examples/configs/number_large_umano2025.json",
+      "sha256": "b15226373be629076edb9f347e83d7a7b89cbc2a8e8f063bdf74263a53f00b14",
+      "bytes": 575
+    },
+    {
+      "path": "examples/from_config.py",
+      "sha256": "3f10d3eefa7df23beeb8041b3ad744595d2d2b7504101128d7a96ad101336b10",
+      "bytes": 351
+    },
+    {
+      "path": "mkdocs.yml",
+      "sha256": "0bd40f507e1158510c6dd01f328c60a6abe2b0eeb97912790e31dcad7fce46ae",
+      "bytes": 664
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "547f438e52b464e5d4f7dc22a53b87cd5cdf6752c9929a4a3099d59aad9745c6",
+      "bytes": 1491
+    },
+    {
+      "path": "results/validation_report.json",
+      "sha256": "c6c53f9fe5909558c512f15dcf49256d87436481bec656ebb46e1d793c290ac6",
+      "bytes": 1001
+    },
+    {
+      "path": "scripts/validate_config.py",
+      "sha256": "05f3ef885d2caebec003e15c3462e425d65d7b93f9afef1d7dc859156acc9ec6",
+      "bytes": 1804
+    },
+    {
+      "path": "src/fuzzymf/__init__.py",
+      "sha256": "d3e14ef6cad15c183d8218a1097f96150d1fcf07d7fea26d2288951f73e81a9d",
+      "bytes": 836
+    },
+    {
+      "path": "src/fuzzymf/cli/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/fuzzymf/cli/plot.py",
+      "sha256": "86a142a343498357a8e74092ab1d53ff9cd019035d37337e3f45ab8f4b5ef0b9",
+      "bytes": 1805
+    },
+    {
+      "path": "src/fuzzymf/core.py",
+      "sha256": "d82b60a70e1407596585fc920480c616f691eacc2b7d55d926bffb408ba4737a",
+      "bytes": 12181
+    },
+    {
+      "path": "src/fuzzymf/io.py",
+      "sha256": "3b3f9f87c6f2724af1eb2a7c189091414ed433601882c05d4ccfb4de233855c3",
+      "bytes": 1463
+    },
+    {
+      "path": "src/fuzzymf/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/fuzzymf/validation.py",
+      "sha256": "d457b4fe8182426f7982c2dbd0b80ea58f720ac11eb6681d4077dcf05d7fdcc7",
+      "bytes": 1408
+    },
+    {
+      "path": "tests/test_core.py",
+      "sha256": "c97d73b95430193be52d429f1e1be1f7a070fa2f25ba03f078c548be7ab1e49b",
+      "bytes": 2638
+    },
+    {
+      "path": "tests/test_io.py",
+      "sha256": "aa6d9f20db23d439c405f6f8a1c2c432262e5017fa5f1e6439e3fb4d3220b753",
+      "bytes": 665
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "f741634b8e26d9c63964c023395cea127205441e92235030f38d88de3cbd75cd",
+      "bytes": 317386
+    }
+  ]
+}

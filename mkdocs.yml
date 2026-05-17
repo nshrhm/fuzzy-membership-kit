@@ -1,0 +1,22 @@
+site_name: fuzzy-membership-kit
+site_description: Auditable membership-function definitions for fuzzy-set research
+repo_url: https://example.com/replace-with-public-repository-url
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - content.code.copy
+nav:
+  - Home: index.md
+  - Theory: theory.md
+  - Theory 日本語: theory_ja.md
+  - Implementation: implementation.md
+  - 実装ガイド: implementation_ja.md
+  - Paper snippet: paper_snippet.md
+  - Reviewer notes: reviewer_notes.md
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

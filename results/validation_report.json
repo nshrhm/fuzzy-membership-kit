@@ -1,0 +1,49 @@
+{
+  "config": "examples/configs/emotion_vas_0_100.yaml",
+  "universe": {
+    "name": "Visual analogue scale",
+    "symbol": "u",
+    "min": 0,
+    "max": 100,
+    "unit": "score"
+  },
+  "memberships": [
+    {
+      "name": "low_emotion",
+      "kind": "compressed_z",
+      "range": {
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "inside_unit_interval": true
+      },
+      "monotonicity": {
+        "direction": "decreasing",
+        "max_violation": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "medium_emotion",
+      "kind": "compressed_pi",
+      "range": {
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "inside_unit_interval": true
+      }
+    },
+    {
+      "name": "high_emotion",
+      "kind": "compressed_s",
+      "range": {
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "inside_unit_interval": true
+      },
+      "monotonicity": {
+        "direction": "increasing",
+        "max_violation": 0.0,
+        "passed": true
+      }
+    }
+  ]
+}
